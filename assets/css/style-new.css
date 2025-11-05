@@ -1,0 +1,927 @@
+/* ===================================
+   Tulika Landing Page - Custom Styles
+   =================================== */
+
+/* CSS Variables for Color Scheme */
+:root {
+    --primary-green: #253b2f;
+    --light-green-bg: #eef0e5;
+    --gradient-start: #086cf4;
+    --gradient-end: #01f3b0;
+    --light-gray: #ededed;
+    --white: #fff;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+/* ===================================
+   Base Styles
+   =================================== */
+
+/* Reset and base styles for new components */
+.landing-page-new {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ===================================
+   About Section Styles - Modern Design
+   =================================== */
+
+.about-new {
+    padding: 60px 0 40px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Section Title Styles */
+.about-new .section-title {
+    margin-bottom: 50px;
+}
+
+.about-main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.about-content-section {
+    padding: 40px 0;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin: 0 15px;
+}
+
+/* Image Styles */
+.about-image-modern {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.about-image-modern::before{
+    /* content: ""; */
+    width: 100%;
+    height: 500px;
+    background: #01f3b0;
+    border-radius: 30px;
+    position: absolute;
+}
+.about-image-modern img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-image-modern:hover img {
+    transform: scale(1.05);
+}
+
+.about-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-green);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(37, 59, 47, 0.3);
+}
+
+.badge-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.badge-text {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* Content Styles */
+.about-content-modern {
+    padding: 20px;
+}
+
+.about-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.about-tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+/* Credentials Modern Design */
+.credentials-modern {
+    background: var(--light-green-bg);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-green);
+}
+
+.credentials-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.credential-item i {
+    color: var(--primary-green);
+    font-size: 1rem;
+    width: 20px;
+}
+
+/* CTA Button */
+.about-cta .btn-modern {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background: var(--primary-green);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 59, 47, 0.3);
+}
+
+.about-cta .btn-modern:hover {
+    background: #1e2f23;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 59, 47, 0.4);
+}
+
+.about-cta .btn-modern i {
+    transition: transform 0.3s ease;
+}
+
+.about-cta .btn-modern:hover i {
+    transform: translateX(5px);
+}
+
+/* ===================================
+   Carousel Base Styles
+   =================================== */
+
+.carousel-section-new {
+    padding: 80px 0;
+    background-color: var(--light-green-bg);
+}
+
+.services-swiper-new,
+.case-studies-swiper-new,
+.testimonials-swiper-new,
+.certificates-swiper-new,
+.blog-swiper-new {
+    padding: 20px 0 60px 0;
+}
+
+.swiper-slide-new {
+    height: auto;
+}
+
+/* ===================================
+   Services Tabs Section Styles
+   =================================== */
+
+.services-tabs-new {
+    padding: 80px 0;
+    background-color: var(--light-green-bg);
+}
+
+/* Services Navigation Wrapper */
+.services-nav-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    gap: 20px;
+}
+
+/* Tab Carousel Container */
+.services-tabs-carousel-container {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0px;
+}
+
+/* Services Navigation Tabs */
+.services-nav-tabs {
+    display: flex;
+    border: none;
+    gap: 15px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    will-change: transform;
+}
+
+.services-nav-tabs.no-transition {
+    transition: none;
+}
+
+.services-nav-tabs .nav-item {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.services-nav-tabs .nav-link {
+    background: var(--white);
+    color: var(--text-dark);
+    border: 2px solid rgba(37, 59, 47, 0.1);
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    min-width: 140px;
+    text-align: center;
+}
+
+.services-nav-tabs .nav-link:hover {
+    background: rgba(37, 59, 47, 0.05);
+    border-color: var(--primary-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 59, 47, 0.1);
+}
+
+.services-nav-tabs .nav-link.active {
+    background: var(--primary-green);
+    color: var(--white);
+    border-color: var(--primary-green);
+    box-shadow: 0 4px 15px rgba(37, 59, 47, 0.3);
+}
+
+/* Carousel Control Buttons */
+.carousel-control-btn {
+    width: 45px;
+    height: 45px;
+    background: var(--white);
+    border: 2px solid var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.carousel-control-btn:hover {
+    background: var(--primary-green);
+    transform: scale(1.1);
+}
+
+.carousel-control-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--primary-green);
+    transition: fill 0.3s ease;
+}
+
+.carousel-control-btn:hover svg {
+    fill: var(--white);
+}
+
+.carousel-control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.carousel-control-btn:disabled:hover {
+    background: var(--white);
+    transform: none;
+}
+
+.carousel-control-btn:disabled svg {
+    fill: var(--primary-green);
+}
+
+/* Services Tab Content */
+.services-tab-content {
+    margin-top: 40px;
+}
+
+.service-detail-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease;
+    min-height: 300px;
+    border: 1px solid rgba(37, 59, 47, 0.1);
+}
+
+.service-detail-card:hover {
+    box-shadow: 0 12px 40px rgba(37, 59, 47, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Service Content */
+.service-content {
+    padding-right: 20px;
+}
+
+.service-detail-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.service-detail-subtext {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.service-detail-description {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Service CTA Button */
+.btn-service-cta {
+    background: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 59, 47, 0.3);
+}
+
+.btn-service-cta:hover {
+    background: #1e2f23;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 59, 47, 0.4);
+}
+
+/* Service Icon Large */
+.service-icon-large {
+    text-align: center;
+    padding: 30px;
+    background: rgba(37, 59, 47, 0.05);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-icon-large:hover {
+    background: rgba(37, 59, 47, 0.1);
+    transform: scale(1.05);
+}
+
+/* Tab Pane Transitions */
+.tab-pane {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.tab-pane.show.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Case Studies Carousel */
+.case-study-card-new {
+    background: var(--primary-green);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Testimonials Carousel */
+.testimonial-card-new {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Certificates Carousel */
+.certificate-card-new {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Blog Carousel */
+.blog-card-new {
+    background: var(--primary-green);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ===================================
+   FAQ Accordion Styles
+   =================================== */
+
+.faq-section-new {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.faq-accordion-new .accordion-item {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.faq-accordion-new .accordion-button {
+    background-color: var(--light-green-bg);
+    color: var(--primary-green);
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.faq-accordion-new .accordion-button:not(.collapsed) {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+/* ===================================
+   Contact Form Styles
+   =================================== */
+
+.contact-section-new {
+    padding: 80px 0;
+    background-color: var(--light-green-bg);
+}
+
+.contact-form-new {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-new .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form-new .form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(37, 59, 47, 0.25);
+}
+
+.contact-form-new .btn-submit {
+    background-color: var(--primary-green);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-new .btn-submit:hover {
+    background-color: #1e2f23;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+@media (max-width: 1200px) {
+    .about-main-title {
+        font-size: 2rem;
+    }
+    
+    .about-content-section {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-new {
+        padding: 50px 0 30px 0;
+    }
+    
+    .about-main-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1rem;
+    }
+    
+    .about-content-section {
+        padding: 30px 0;
+        margin: 0 5px;
+    }
+    
+    .about-image-modern img {
+        height: 350px;
+    }
+    
+    .about-content-modern {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .about-name {
+        font-size: 1.8rem;
+    }
+    
+    .about-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-section-new {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-new {
+        padding: 40px 0 20px 0;
+    }
+    
+    .about-new .section-title {
+        margin-bottom: 30px;
+    }
+    
+    .about-main-title {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+    
+    .about-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .about-content-section {
+        padding: 25px 15px;
+        border-radius: 15px;
+        margin: 0;
+    }
+    
+    .about-image-modern img {
+        height: 300px;
+    }
+    
+    .about-badge {
+        top: 15px;
+        right: 15px;
+        padding: 12px 15px;
+    }
+    
+    .badge-number {
+        font-size: 1.3rem;
+    }
+    
+    .badge-text {
+        font-size: 0.75rem;
+    }
+    
+    .about-name {
+        font-size: 1.6rem;
+    }
+    
+    .about-tagline {
+        font-size: 1rem;
+    }
+    
+    .about-description {
+        font-size: 0.95rem;
+    }
+    
+    .credentials-modern {
+        padding: 20px;
+    }
+    
+    .credentials-title {
+        font-size: 1rem;
+    }
+    
+    .credential-item {
+        font-size: 0.9rem;
+    }
+
+    .carousel-section-new,
+    .faq-section-new,
+    .contact-section-new {
+        padding: 60px 0;
+    }
+
+    .testimonial-card-new {
+        padding: 25px 20px;
+    }
+
+    /* Services Tabs Mobile Styles */
+    .services-tabs-new {
+        padding: 60px 0;
+    }
+
+    .services-nav-wrapper {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .services-nav-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        min-width: 120px;
+    }
+
+    .carousel-control-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-control-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .service-detail-card {
+        padding: 30px 25px;
+        min-height: 250px;
+    }
+
+    .service-detail-title {
+        font-size: 1.8rem;
+    }
+
+    .service-detail-subtext {
+        font-size: 1.1rem;
+    }
+
+    .service-detail-description {
+        font-size: 0.95rem;
+    }
+
+    .btn-service-cta {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
+    .service-icon-large {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .case-study-card-new,
+    .blog-card-new {
+        padding: 20px;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .contact-form-new {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-new {
+        padding: 30px 0 15px 0;
+    }
+    
+    .about-main-title {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+    
+    .about-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .about-content-section {
+        padding: 20px 10px;
+    }
+    
+    .about-image-modern img {
+        height: 250px;
+    }
+    
+    .about-badge {
+        top: 10px;
+        right: 10px;
+        padding: 10px 12px;
+    }
+    
+    .badge-number {
+        font-size: 1.1rem;
+    }
+    
+    .badge-text {
+        font-size: 0.7rem;
+    }
+    
+    .about-name {
+        font-size: 1.4rem;
+    }
+    
+    .about-tagline {
+        font-size: 0.95rem;
+    }
+    
+    .about-description {
+        font-size: 0.9rem;
+    }
+    
+    .credentials-modern {
+        padding: 15px;
+    }
+    
+    .credentials-title {
+        font-size: 0.95rem;
+    }
+    
+    .credential-item {
+        font-size: 0.85rem;
+    }
+    
+    .about-cta .btn-modern {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    .carousel-section-new,
+    .faq-section-new,
+    .contact-section-new {
+        padding: 40px 0;
+    }
+
+    /* Services Tabs Small Mobile Styles */
+    .services-tabs-new {
+        padding: 40px 0;
+    }
+
+    .services-nav-tabs .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        min-width: 100px;
+    }
+
+    .carousel-control-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-control-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .service-detail-card {
+        padding: 25px 20px;
+        min-height: 200px;
+    }
+
+    .service-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .service-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .service-detail-subtext {
+        font-size: 1rem;
+    }
+
+    .service-detail-description {
+        font-size: 0.9rem;
+    }
+
+    .btn-service-cta {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    .service-icon-large {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .service-icon-large i {
+        font-size: 3rem !important;
+    }
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+
+.text-primary-green {
+    color: var(--primary-green) !important;
+}
+
+.bg-primary-green {
+    background-color: var(--primary-green) !important;
+}
+
+.bg-light-green {
+    background-color: var(--light-green-bg) !important;
+}
+
+.section-title-new {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.section-subtitle-new {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+/* ===================================
+   Animation Classes
+   =================================== */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
